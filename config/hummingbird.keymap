@@ -14,9 +14,16 @@
 #define FN 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick-tap-ms = <200>; };
 
-&mt { quick-tap-ms = <200>; };
+&lt {
+    quick-tap-ms = <200>;
+    flavor = "hold-preferred";
+};
+
+&mt {
+    quick-tap-ms = <200>;
+    flavor = "balanced";
+};
 
 / {
     keymap {
@@ -24,40 +31,40 @@
 
         default_layer {
             bindings = <
-                &mt LCTRL Q   &kp W     &kp E     &kp R        &kp T        &kp H      &kp U     &kp I     &kp O     &mt LALT P
-                &mt LSHIFT A  &kp S     &kp D     &kp F        &kp G        &kp N      &kp J     &kp K     &kp L     &mt RSHIFT SQT
-                              &kp X     &kp C     &kp V                                &kp M     &kp COMMA &kp DOT
-                                                  &lt SYM TAB  &lt NUM RET  &kp SPACE  &mt LGUI BSPC
+&mt LCTRL Q   &kp W  &kp E  &kp R        &kp T          &kp H      &kp U          &kp I      &kp O    &mt LALT P
+&mt LSHIFT A  &kp S  &kp D  &kp F        &kp G          &kp N      &kp J          &kp K      &kp L    &mt RSHIFT SQT
+              &kp X  &kp C  &kp V                                  &kp M          &kp COMMA  &kp DOT
+                            &lt SYM TAB  &lt NUM RET    &kp SPACE  &mt LGUI BSPC
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-                &kp GRAVE     &none      &none     &none     &none     &kp Y     &kp LBKT   &kp RBKT   &kp SEMI   &kp SQT
-                &mt LSHIFT Z  &none      &none     &none     &kp B     &none     &kp MINUS  &kp EQUAL  &kp BSLH   &mt RSHIFT SLASH
-                              &kp LCTRL  &kp LALT  &kp LGUI                      &kp RGUI   &kp RALT   &kp RCTRL
-                                                   &trans    &mo FN    &trans    &trans
+&kp GRAVE     &none      &none     &none     &none     &kp Y   &kp LBKT   &kp RBKT   &kp SEMI   &kp SQT
+&mt LSHIFT Z  &none      &none     &none     &kp B     &none   &kp MINUS  &kp EQUAL  &kp BSLH   &mt RSHIFT SLASH
+              &kp LCTRL  &kp LALT  &kp LGUI                    &kp RGUI   &kp RALT   &kp RCTRL
+                                   &trans    &mo FN    &trans  &trans
             >;
         };
 
         num_layer {
             display-name = "Num";
             bindings = <
-                &kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP  &kp COMMA   &kp N7     &kp N8      &kp N9    &kp N0
-                &kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN  &kp DOT     &kp N4     &kp N5      &kp N6    &kp DEL
-                            &kp LCTRL  &kp LALT  &kp LGUI                          &kp N1     &kp N2      &kp N3
-                                                 &mo FN     &trans     &caps_word  &trans
+&kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP    &kp COMMA   &kp N7  &kp N8  &kp N9  &kp N0
+&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN    &kp DOT     &kp N4  &kp N5  &kp N6  &kp DEL
+            &kp LCTRL  &kp LALT  &kp LGUI                            &kp N1  &kp N2  &kp N3
+                                 &mo FN     &trans       &caps_word  &trans
             >;
         };
 
         fn_layer {
             display-name = "Fn";
             bindings = <
-                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp F12   &kp F7    &kp F8    &kp F9    &kp F10
-                &kp LSHIFT  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &kp F11   &kp F4    &kp F5    &kp F6    &kp RSHIFT
-                            &kp LCTRL     &kp LALT      &kp LGUI                              &kp F1    &kp F2    &kp F3
-                                                        &trans        &trans        &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F12  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LSHIFT  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP        &kp F11  &kp F4  &kp F5  &kp F6  &kp RSHIFT
+            &kp LCTRL     &kp LALT      &kp LGUI                               &kp F1  &kp F2  &kp F3
+                                        &trans        &trans          &trans   &trans
             >;
         };
     };
