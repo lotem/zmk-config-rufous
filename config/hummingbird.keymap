@@ -31,9 +31,9 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q   &kp W  &kp E  &kp R        &kp T          &kp H      &kp U          &kp I      &kp O    &mt LALT P
-&mt LSHIFT A  &kp S  &kp D  &kp F        &kp G          &kp N      &kp J          &kp K      &kp L    &mt RSHIFT SQT
-              &kp X  &kp C  &kp V                                  &kp M          &kp COMMA  &kp DOT
+&mt LCTRL Q   &kp W  &kp E  &kp R        &kp T          &kp Y      &kp U          &kp I  &kp O  &mt LALT P
+&mt LSHIFT A  &kp S  &kp D  &kp F        &kp G          &kp H      &kp J          &kp K  &kp L  &mt RSHIFT Z
+              &kp X  &kp C  &kp V                                  &kp B          &kp N  &kp M
                             &lt SYM TAB  &lt NUM RET    &kp SPACE  &mt LGUI BSPC
             >;
         };
@@ -41,20 +41,20 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp GRAVE     &none      &none     &none     &none     &kp Y   &kp LBKT   &kp RBKT   &kp SEMI   &kp SQT
-&mt LSHIFT Z  &none      &none     &none     &kp B     &none   &kp MINUS  &kp EQUAL  &kp BSLH   &mt RSHIFT SLASH
-              &kp LCTRL  &kp LALT  &kp LGUI                    &kp RGUI   &kp RALT   &kp RCTRL
-                                   &trans    &mo FN    &trans  &trans
+&kp GRAVE   &none      &none     &none     &none     &none   &kp LBKT   &kp RBKT    &kp BSLH   &kp GRAVE
+&kp LSHIFT  &none      &none     &none     &none     &none   &kp MINUS  &kp EQUAL   &kp SEMI   &kp APOS
+            &kp LCTRL  &kp LALT  &kp LGUI                    &kp COMMA  &kp PERIOD  &kp SLASH
+                                 &trans    &mo FN    &trans  &caps_word
             >;
         };
 
         num_layer {
             display-name = "Num";
             bindings = <
-&kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP    &kp COMMA   &kp N7  &kp N8  &kp N9  &kp N0
-&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN    &kp DOT     &kp N4  &kp N5  &kp N6  &kp DEL
-            &kp LCTRL  &kp LALT  &kp LGUI                            &kp N1  &kp N2  &kp N3
-                                 &mo FN     &trans       &caps_word  &trans
+&kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP    &kp COMMA  &kp N7      &kp N8  &kp N9  &kp N0
+&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN    &kp DOT    &kp N4      &kp N5  &kp N6  &kp DEL
+            &kp LCTRL  &kp LALT  &kp LGUI                           &kp N1      &kp N2  &kp N3
+                                 &mo FN     &trans       &trans     &trans
             >;
         };
 
