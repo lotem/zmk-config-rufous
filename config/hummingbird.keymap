@@ -41,19 +41,19 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp GRAVE   &none      &none     &none     &none     &none   &kp LBKT   &kp RBKT    &kp BSLH   &kp GRAVE
-&kp LSHIFT  &none      &none     &none     &none     &none   &kp MINUS  &kp EQUAL   &kp SEMI   &kp APOS
-            &kp LCTRL  &kp LALT  &kp LGUI                    &kp COMMA  &kp PERIOD  &kp SLASH
-                                 &trans    &mo FN    &trans  &caps_word
+&kp GRAVE   &none      &none     &none     &none     &none       &kp LBKT   &kp RBKT    &kp BSLH   &kp GRAVE
+&kp LSHIFT  &none      &none     &none     &none     &none       &kp MINUS  &kp EQUAL   &kp SEMI   &kp APOS
+            &kp LCTRL  &kp LALT  &kp LGUI                        &kp COMMA  &kp PERIOD  &kp SLASH
+                                 &trans    &mo FN    &caps_word  &trans
             >;
         };
 
         num_layer {
             display-name = "Num";
             bindings = <
-&kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP    &kp COMMA  &kp N7      &kp N8  &kp N9  &kp N0
-&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN    &kp DOT    &kp N4      &kp N5  &kp N6  &kp DEL
-            &kp LCTRL  &kp LALT  &kp LGUI                           &kp N1      &kp N2  &kp N3
+&kp ESC     &kp HOME   &kp UP    &kp END    &kp PG_UP    &kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0
+&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN    &kp DOT    &kp N4  &kp N5  &kp N6  &kp DEL
+            &kp LCTRL  &kp LALT  &kp LGUI                           &kp N1  &kp N2  &kp N3
                                  &mo FN     &trans       &trans     &trans
             >;
         };
