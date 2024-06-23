@@ -41,19 +41,19 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp N1            &kp N2       &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8         &kp N9           &kp N0
-&mt LSHIFT GRAVE  &none        &kp LBKT    &kp RBKT    &none       &none       &kp MINUS   &kp EQUAL      &kp SEMI         &mt RSHIFT APOS
-                  &mt LCTRL Z  &mt LALT C  &mt LGUI V                          &mt RGUI K  &mt RALT BSLH  &mt RCTRL SLASH
-                                           &kp LCTRL   &kp LALT    &caps_word  &kp LGUI
+&kp N1        &kp N2     &kp N3    &kp N4    &kp N5    &kp N6      &kp N7          &kp N8         &kp N9           &kp N0
+&mt LSHIFT Z  &none      &kp LBKT  &kp RBKT  &kp V     &kp K       &kp MINUS       &kp EQUAL      &kp SEMI         &mt RSHIFT APOS
+              &kp LCTRL  &kp LALT  &kp LGUI                        &mt RGUI GRAVE  &mt RALT BSLH  &mt RCTRL SLASH
+                                   &mo 3     &trans    &caps_word  &mo 3
             >;
         };
 
         nav_layer {
             bindings = <
-&kp ESC    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
-&kp LSHFT  &none       &none         &none         &none       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RSHFT
-           &kp LCTRL   &kp LALT      &kp LGUI                            &kp RGUI   &kp RALT   &kp RCTRL
-                                     &trans        &trans      &mo 3     &trans
+&kp ESC    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
+&kp LSHFT  &none       &none         &none         &none       &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RSHFT
+           &kp LCTRL   &kp LALT      &kp LGUI                              &kp RGUI   &kp RALT   &kp RCTRL
+                                     &trans        &trans      &caps_word  &trans
             >;
         };
 
