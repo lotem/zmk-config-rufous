@@ -31,29 +31,29 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q   &kp W  &kp F  &kp P      &kp B          &kp J      &kp L           &kp U      &kp Y    &kp BSPC
-&mt LSHIFT A  &kp R  &kp S  &kp T      &kp G          &kp M      &kp N           &kp E      &kp I    &mt RSHIFT O
-              &kp X  &kp C  &kp D                                &kp H           &kp COMMA  &kp DOT
-                            &lt 1 TAB  &lt 2 SPACE    &kp SPACE  &mt LGUI ENTER
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-&kp ESC    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
-&kp LSHFT  &none       &none         &none         &none       &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RSHFT
-           &kp LCTRL   &kp LALT      &kp LGUI                              &kp RGUI   &kp RALT   &kp RCTRL
-                                     &trans        &mo 3       &caps_word  &trans
+&kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y      &kp U        &kp I  &kp O  &kp P
+&kp A  &kp S  &kp D  &kp F      &kp G               &kp H      &kp J        &kp K  &kp L  &kp BSPC
+       &kp X  &kp C  &kp V                                     &kp B        &kp N  &kp M
+                     &lt 1 TAB  &mt LSHIFT SPACE    &kp SPACE  &lt 2 ENTER
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp N1        &kp N2     &kp N3    &kp N4    &kp N5    &kp N6      &kp N7          &kp N8         &kp N9           &kp N0
-&mt LSHIFT Z  &none      &kp LBKT  &kp RBKT  &kp V     &kp K       &kp MINUS       &kp EQUAL      &kp SEMI         &mt RSHIFT APOS
-              &kp LCTRL  &kp LALT  &kp LGUI                        &mt RGUI GRAVE  &mt RALT BSLH  &mt RCTRL SLASH
-                                   &mo 3     &trans    &caps_word  &trans
+&kp N1        &kp N2     &kp N3     &kp N4     &kp N5      &kp N6      &kp N7          &kp N8        &kp N9           &kp N0
+&mt LSHIFT Z  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp BSLH    &kp LBKT    &kp RBKT        &kp SEMI      &kp APOS         &kp RSHFT
+              &kp LCTRL  &kp LALT   &kp LGUI                           &mt RGUI COMMA  &mt RALT DOT  &mt RCTRL SLASH
+                                    &trans     &trans      &caps_word  &mo 3
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+&kp ESC    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
+&kp LSHFT  &none       &none         &none         &none       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RSHFT
+           &kp LCTRL   &kp LALT      &kp LGUI                            &kp RGUI   &kp RALT   &kp RCTRL
+                                     &mo 3         &trans      &trans    &trans
             >;
         };
 
