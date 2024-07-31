@@ -31,20 +31,20 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q  &kp W  &kp E  &kp R      &kp T          &kp Y      &kp U          &kp I  &kp O  &mt RALT P
-&mt LSHFT A  &kp S  &kp D  &kp F      &kp G          &kp H      &kp J          &kp K  &kp L  &mt RSHFT Z
-             &kp X  &kp C  &kp V                                &kp B          &kp N  &kp M
-                           &lt 1 TAB  &lt 2 ENTER    &kp SPACE  &mt LGUI BSPC
+&mt LGUI Q   &kp W  &kp E  &kp R      &kp T              &kp Y      &kp U       &kp I  &kp O  &mt RALT P
+&mt LSHFT A  &kp S  &kp D  &kp F      &kp G              &kp H      &kp J       &kp K  &kp L  &mt RSHFT Z
+             &kp X  &kp C  &kp V                                    &kp B       &kp N  &kp M
+                           &lt 1 TAB  &mt LCTRL ENTER    &kp SPACE  &lt 2 BSPC
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp LCTRL  &kp N1  &kp N2  &kp N3  &none     &none       &kp LBKT   &kp RBKT   &kp BSLH  &mt RALT GRAVE
+&kp LGUI   &kp N1  &kp N2  &kp N3  &none     &none       &kp LBKT   &kp RBKT   &kp BSLH  &mt RALT GRAVE
 &kp LSHFT  &kp N4  &kp N5  &kp N6  &kp N0    &kp PLUS    &kp MINUS  &kp EQUAL  &kp SEMI  &mt RSHFT APOS
            &kp N7  &kp N8  &kp N9                        &kp COMMA  &kp DOT    &kp FSLH
-                           &trans  &mo 3     &caps_word  &trans
+                           &trans  &trans    &caps_word  &lt 3 DEL
             >;
         };
 
@@ -53,7 +53,7 @@
 &kp ESC    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
 &kp LSHFT  &none       &none         &none         &none       &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RSHFT
            &kp LCTRL   &kp LALT      &kp LGUI                              &kp RGUI   &kp RALT   &kp RCTRL
-                                     &mo 3         &trans      &caps_word  &trans
+                                     &lt 3 ESC     &trans      &caps_word  &trans
             >;
         };
 
