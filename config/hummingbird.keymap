@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -44,19 +45,19 @@
 
         fn_layer {
             bindings = <
-&mt LALT F1   &kp F2   &kp F3   &kp F4     &kp F5       &kp HOME    &kp PG_DN   &kp PG_UP     &kp END       &kp RGUI
-&mt LCTRL F6  &kp F7   &kp F8   &kp F9     &kp F10      &kp LEFT    &kp DOWN    &kp UP        &kp RIGHT     &kp DEL
-              &kp F11  &kp F12  &kp PSCRN                           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
+&mt LALT F1   &kp F2   &kp F3   &kp F4     &kp F5       &kp HOME   &kp PG_DN     &kp PG_UP     &kp END     &kp RGUI
+&mt LCTRL F6  &kp F7   &kp F8   &kp F9     &kp F10      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT   &kp DEL
+              &kp F11  &kp F12  &kp PSCRN                          &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
                                 &lt 3 ESC  &kp LSHFT    &kp RSHFT  &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
-            &trans        &trans        &trans                          &trans  &trans  &trans
-                                        &trans        &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG
+&trans  &trans  &trans  &trans  &trans    &trans      &trans        &trans        &trans        &trans
+        &trans  &trans  &trans                        &trans        &trans        &trans
+                        &trans  &trans    &trans      &trans
             >;
         };
     };
