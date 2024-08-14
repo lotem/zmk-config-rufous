@@ -36,7 +36,7 @@
 
         sym_layer {
             bindings = <
-&kp LGUI   &kp N1  &kp N2  &kp N3  &none     &none       &kp LBKT   &kp RBKT   &kp BSLH  &mt RALT GRAVE
+&kp LALT   &kp N1  &kp N2  &kp N3  &none     &none       &kp LBKT   &kp RBKT   &kp BSLH  &mt RGUI GRAVE
 &kp LSHFT  &kp N4  &kp N5  &kp N6  &kp N0    &kp PLUS    &kp MINUS  &kp EQUAL  &kp SEMI  &mt RSHFT APOS
            &kp N7  &kp N8  &kp N9                        &kp COMMA  &kp DOT    &kp FSLH
                            &trans  &trans    &caps_word  &lt 3 DEL
